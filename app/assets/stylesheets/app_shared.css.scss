@@ -1,0 +1,120 @@
+@import "bootstrap/variables";
+@import "colors";
+
+html,body {
+    height: 100%;
+}
+h1, .h1 {
+  font-size: 24px;
+}
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+#footer {
+  height: 70px;
+  color: $gray-light;
+  background-color: lighten($midnight-blue, 70%);
+  text-align: center;
+}
+
+.footer-link {
+  font: 80% Arial,sans-serif;
+}
+
+.narrow-well {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 60px; /* nav bar space */
+}
+
+.control-label {
+  &.devise {
+    white-space: nowrap;
+    padding-right: 0px;
+    padding-left: 0px;
+    color: $nephritis;
+  }
+}
+
+> label {
+  &.devise {
+    color: $nephritis;
+    &.normal {
+      font-weight:normal;
+    }
+  }
+}
+
+.help-block {
+  &.devise {
+    font: 85% Arial,sans-serif;
+    font-style:italic;
+    color: $nephritis;
+  }
+}
+
+.small-text {
+  font: 85% Arial,sans-serif;
+  font-style:italic;
+}
+
+.round-box {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border:1px solid #000;
+  &.devise {
+    margin-top: 20px;
+    border-color: $nephritis;
+  }
+}
+
+> hr {
+  &.devise {
+    border-color: $nephritis;
+    width: 80%;
+    margin-top: 0;
+  }
+  &.green {
+    border-color: $nephritis;
+  }
+}
+
+.modal-header {
+  &.devise {
+    padding: $modal-title-padding;
+    border-bottom: 1px solid $nephritis;
+    min-height: ($modal-title-padding + $modal-title-line-height);
+  }
+}
+.modal-title {
+  &.devise {
+    color: $belize-hole;
+  }
+}
+.modal-footer {
+  &.devise {
+    margin-top: 0px;
+    padding: 10px;
+    border-top: 1px solid $nephritis;
+    font: 85% Arial,sans-serif;
+  }
+}
+.mini-red {
+  color: $alizarin;
+  font-size: 9px;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+  background-color: lighten($belize-hole, 20%);
+  border-color: lighten($belize-hole, 10%);
+  color: $white;
+}
+.nowrap {
+  white-space: nowrap;
+}

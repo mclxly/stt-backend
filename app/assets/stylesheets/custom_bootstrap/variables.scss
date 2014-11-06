@@ -1,0 +1,17 @@
+@import "colors";
+
+$navbar-inverse-color:               $white;
+$navbar-inverse-bg:                  $belize-hole;
+$navbar-inverse-border:              $navbar-inverse-bg;
+$navbar-inverse-link-color:          $white;
+$navbar-inverse-link-hover-color:    $white;
+$navbar-inverse-brand-hover-color:   $white;
+
+$state-warning-text:   darken($sun-flower, 20%);
+$state-warning-bg:     lighten( $state-warning-text, 50%);
+$state-danger-text:    darken($pomegranate, 20%);
+$state-danger-bg:      lighten( $state-danger-text, 50%);
+$state-success-text:   darken($turquoise, 20%);
+$state-success-bg:     lighten( $state-success-text, 60%);
+$state-info-text:      darken($peter-river, 20%);
+$state-info-bg:        lighten( $state-info-text, 50%);

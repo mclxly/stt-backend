@@ -1,0 +1,27 @@
+// tighten up form spacing a bit
+// careful - may create problem with .help_block bottom
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.form-horizontal {
+  margin: 0;
+  padding: 0;
+  .form-group {
+    margin-bottom: 7px;
+    @extend clearfix;    
+  }
+}
+
+.navbar-text {
+  &.avatar {
+   @include navbar-vertical-align(34px); // based on avatar size up to 30x30
+  }
+  > a {
+    color: $navbar-inverse-link-color;
+    &:hover, &:focus {
+      color: $navbar-inverse-link-color;
+      text-decoration: underline;
+    }
+  }
+}
