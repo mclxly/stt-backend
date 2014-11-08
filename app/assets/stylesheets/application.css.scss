@@ -11,8 +11,10 @@
  * file per style scope.
  *
  *= require colors
+ *= require font-awesome
  *= require custom_bootstrap/custom_bootstrap
  *= require app_shared
+ *= require animate.css
  *= require_tree .
  *= require_self
  */

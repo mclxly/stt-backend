@@ -48,3 +48,5 @@ gem 'autoprefixer-rails'
 gem 'mysql2'
 # Devise is a flexible authentication solution for Rails based on Warden.
 gem 'devise'
+# the Font-Awesome web fonts
+gem "font-awesome-rails"

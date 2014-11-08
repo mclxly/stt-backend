@@ -1,0 +1,14 @@
+<h1>reject</h1>
+
+  <% if notice %>
+    <div class="alert alert-info alert-dismissible shake animated" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <strong>Notice!</strong> <%= notice %>
+    </div>
+  <% end %>
+  <% if alert %>
+    <div class="alert alert-warning alert-dismissible shake animated" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <strong>Warning!</strong> <%= alert %>
+    </div>
+  <% end %>

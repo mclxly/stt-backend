@@ -1,8 +1,18 @@
 Rails.application.routes.draw do
   devise_for :users
   get 'dashboard/index'
+  get 'dashboard/reject'
+  
+  devise_scope :user do
+    authenticated :user do
+      root 'dashboard#index', as: :authenticated_root
+    end
 
-  root 'dashboard#index'
+    unauthenticated do
+      root 'devise/sessions#new', as: :unauthenticated_root
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
