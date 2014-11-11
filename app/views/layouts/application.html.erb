@@ -9,24 +9,35 @@
 <body>
 <%= render 'layouts/partials/navbar' %>
 
-<div class="container">
-  <% if notice %>
-    <div class="alert alert-info alert-dismissible shake animated" role="alert">
-      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-      <strong>Notice!</strong> <%= notice %>
+<div class="container-fluid dash-c">
+  <div class="row">
+    <!-- sidebar begin -->
+    <div class="col-sm-3 col-md-2 sidebar">
+      <%= render 'layouts/partials/left_nav_panel' %>
     </div>
-  <% end %>
-  <% if alert %>
-    <div class="alert alert-warning alert-dismissible shake animated" role="alert">
-      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-      <strong>Warning!</strong> <%= alert %>
+    <!-- sidebar end -->
+    <!-- main begin -->
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div class="row">
+      <% if notice %>
+        <div class="alert alert-info alert-dismissible shake animated" role="alert">
+          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <strong>Notice!</strong> <%= notice %>
+        </div>
+      <% end %>
+      <% if alert %>
+        <div class="alert alert-warning alert-dismissible shake animated" role="alert">
+          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <strong>Warning!</strong> <%= alert %>
+        </div>
+      <% end %>
+      </div>
+      <!-- content begin -->
+      <%= yield %>
+      <!-- content end -->
     </div>
-  <% end %>
-
-  <%= yield %>
-</div>
-
-<div class="container-fluid">
+    <!-- main end -->
+  </div>
   <div class="clear_line_gray"></div>
   <div class="row">
     <div class="col-md-12">

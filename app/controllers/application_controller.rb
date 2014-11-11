@@ -22,10 +22,10 @@ class ApplicationController < ActionController::Base
   def reject_user
     if user_signed_in?
       if current_user.role.name == 'new member'        
-        redirect_to dashboard_reject_path(@user), flash: { alert: 'Rejct Access! Your account is still waiting for approve.'}
+        redirect_to dashboard_reject_path(@user), flash: { alert: 'Your account is still waiting for approve.'}
       end
       if current_user.role.name == 'banned'        
-        redirect_to dashboard_reject_path(@user), :flash => { :alert => 'Rejct Access! Your account is banned.'}
+        redirect_to dashboard_reject_path(@user), :flash => { :alert => 'Your account is banned.'}
       end
     end
   end
